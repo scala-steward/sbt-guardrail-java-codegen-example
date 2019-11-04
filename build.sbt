@@ -9,8 +9,6 @@ scalaVersion := "2.12.10"
 
 scalacOptions += "-Xexperimental"
 
-compileOrder := CompileOrder.JavaThenScala
-
 guardrailTasks in Compile := List(
   JavaClient(file("petstore.json"), pkg="com.example.clients.petstore"),
   JavaServer(file("petstore.json"), pkg="com.example.servers.petstore")
