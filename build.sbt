@@ -12,8 +12,8 @@ scalacOptions += "-Xexperimental"
 compileOrder := CompileOrder.JavaThenScala
 
 guardrailTasks in Compile := List(
-  JavaClient(file("petstore.json"), pkg="com.example.clients.petstore", imports=List("support.PositiveLong")),
-  JavaServer(file("petstore.json"), pkg="com.example.servers.petstore", imports=List("support.PositiveLong"))
+  JavaClient(file("petstore.json"), pkg="com.example.clients.petstore"),
+  JavaServer(file("petstore.json"), pkg="com.example.servers.petstore")
 )
 
 // workaround for SBT issue
