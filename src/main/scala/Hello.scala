@@ -1,6 +1,7 @@
 package helloworld
 
 import scala.concurrent.Future
+import com.example.clients.petstore.AsyncHttpClientSupport
 
 object Hello {
   def main(args: Array[String]) = {
@@ -9,10 +10,10 @@ object Hello {
 
     val server = buildServer()
 
-    val userClient = UserClient.httpClient(server)
-    val result = userClient.getUserByName("billg")
+    val userClient = UserClient.Builder.build()
+    val userByNameResponse = userClient.getUserByName("billg").call()
 
-    System.out.println(result)
+    System.out.println(userByNameResponse)
   }
 
   private def buildServer(): String = {
