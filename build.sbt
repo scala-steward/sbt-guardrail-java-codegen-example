@@ -5,7 +5,7 @@ name := "sbt-guardrail-java-codegen-example"
 
 version := "0.0.1-SNAPSHOT"
 
-scalaVersion := "2.13.1"
+scalaVersion := "2.13.2"
 
 scalacOptions += "-Xexperimental"
 
