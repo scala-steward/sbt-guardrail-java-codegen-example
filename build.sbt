@@ -24,5 +24,5 @@ libraryDependencies ++= Seq(
   "org.asynchttpclient"          % "async-http-client"       % "2.12.1",
   "org.glassfish.jersey.media"   % "jersey-media-multipart"  % "2.31",
   "javax.xml.bind"               % "jaxb-api"                % "2.3.1",
-  "org.scalatest"               %% "scalatest"               % "3.2.0" % "test"
+  "org.scalatest"               %% "scalatest"               % "3.2.1" % "test"
 )
