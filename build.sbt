@@ -17,7 +17,7 @@ guardrailTasks in Compile := List(
 // workaround for SBT issue
 unmanagedSourceDirectories in Compile += (sourceManaged in Compile).value
 
-val dropwizardVersion = "1.3.24"
+val dropwizardVersion = "1.3.25"
 
 libraryDependencies ++= Seq(
   "io.dropwizard"                % "dropwizard-core"         % dropwizardVersion,
