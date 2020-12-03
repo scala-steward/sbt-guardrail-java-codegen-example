@@ -22,7 +22,7 @@ val dropwizardVersion = "1.3.27"
 libraryDependencies ++= Seq(
   "io.dropwizard"                % "dropwizard-core"         % dropwizardVersion,
   "org.asynchttpclient"          % "async-http-client"       % "2.12.1",
-  "org.glassfish.jersey.media"   % "jersey-media-multipart"  % "2.32",
+  "org.glassfish.jersey.media"   % "jersey-media-multipart"  % "3.0.0",
   "javax.xml.bind"               % "jaxb-api"                % "2.3.1",
   "org.scalatest"               %% "scalatest"               % "3.2.3" % "test"
 )
